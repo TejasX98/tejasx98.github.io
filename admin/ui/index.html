@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="admin-token" content="{{TOKEN}}">
+  <title>Portfolio Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ui/admin.css">
+  <link rel="icon" href="/site/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="bar">
+    <div class="bar-left">
+      <span class="logo">PORTFOLIO <b>ADMIN</b></span>
+      <span class="local">● Local only</span>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button data-tab="projects" class="on">Projects</button>
+      <button data-tab="pubs">Publications</button>
+      <button data-tab="profile">Profile</button>
+      <button data-tab="publish">Publish <span id="change-badge" class="badge" hidden></span></button>
+    </nav>
+    <a class="btn ghost" href="/site/" target="_blank" rel="noopener">Preview site ↗</a>
+  </header>
+
+  <main>
+    <!-- PROJECTS -->
+    <section id="tab-projects" class="tab">
+      <aside class="side">
+        <button class="btn primary full" id="new-project">+ New project</button>
+        <p class="hint">Order here = order on the site. Drafts are hidden from the live site.</p>
+        <ol id="project-list" class="plist"></ol>
+      </aside>
+      <div class="editor" id="editor">
+        <div class="empty">Select a project on the left, or create a new one.</div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="tab-pubs" class="tab" hidden>
+      <div class="page">
+        <div class="page-head">
+          <h1>Publications</h1>
+          <div class="row-gap">
+            <button class="btn" id="add-pub">+ Add publication</button>
+            <button class="btn primary" id="save-pubs">Save publications</button>
+          </div>
+        </div>
+        <div id="pub-list"></div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="tab-profile" class="tab" hidden>
+      <div class="page">
+        <h1>Profile</h1>
+        <div class="profile-grid">
+          <div class="card">
+            <h3>Photo</h3>
+            <img id="photo-preview" class="photo" alt="">
+            <label class="btn">Upload new photo<input type="file" id="photo-input" accept="image/*" hidden></label>
+            <p class="hint">Square, head-and-shoulders. Location data is removed automatically.</p>
+          </div>
+          <div class="card">
+            <h3>CV (PDF)</h3>
+            <p id="cv-status" class="mono"></p>
+            <div class="row-gap">
+              <label class="btn">Upload CV<input type="file" id="cv-input" accept="application/pdf" hidden></label>
+              <button class="btn danger-ghost" id="cv-remove">Remove CV link</button>
+            </div>
+            <p class="hint warn">Use a web version of your CV <b>without your phone number or home address</b> — the site is public.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="page-head">
+            <h3>All profile text — <span class="mono">site.yml</span></h3>
+            <button class="btn primary" id="save-site">Save profile</button>
+          </div>
+          <p class="hint">Intro, contact links, skills, highlights, experience and education. Keep the spacing at the start of lines — it matters. If something's wrong you'll get a message with the line number.</p>
+          <textarea id="site-text" class="code" spellcheck="false" rows="32"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLISH -->
+    <section id="tab-publish" class="tab" hidden>
+      <div class="page narrow">
+        <h1>Publish to the live site</h1>
+        <div class="card" id="git-card"></div>
+        <div class="card">
+          <h3>Publish</h3>
+          <label class="field"><span>What changed (short note)</span>
+            <input id="commit-msg" value="Update portfolio content" maxlength="200"></label>
+          <div class="row-gap">
+            <button class="btn primary" id="publish-btn">Publish to GitHub</button>
+            <button class="btn" id="pull-btn">Get latest from GitHub</button>
+          </div>
+          <p class="hint">Publishing saves a version in git and sends it to GitHub. The live site updates about a minute later.</p>
+          <pre id="publish-log" class="log" hidden></pre>
+        </div>
+        <div class="card">
+          <h3>Tidy up</h3>
+          <p class="hint">Removes media files that no project or publication uses any more (keeps the site small).</p>
+          <button class="btn" id="cleanup-btn">Find unused media</button>
+          <div id="cleanup-out"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toasts" aria-live="polite"></div>
+  <dialog id="dialog"><form method="dialog" id="dialog-form"></form></dialog>
+
+  <script src="/site/assets/js/vendor/marked.js"></script>
+  <script src="/ui/admin.js"></script>
+</body>
+</html>

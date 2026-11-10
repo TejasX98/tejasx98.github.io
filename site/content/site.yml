@@ -1,0 +1,108 @@
+# Site settings — edit here or in the admin tool (Profile tab).
+
+name: Tejas Chaudhari
+headline: Instrumentation & Controls Engineer
+tagline: >-
+  PLC control software, commissioning and field engineering for warehouse
+  automation, ASRS and material handling. MSc Engineering Management. Now leading
+  inventory control and quality assurance at a high-volume UK fulfilment centre.
+location: Leicester, UK
+url: https://tejasx98.github.io/        # your live address (used for link previews)
+discipline: Instrumentation & Controls
+status: Open to controls & automation roles
+updated: Nov 2026
+photo: media/profile/photo.jpg
+accent: '#1f5fbf'
+
+titleblock:
+  - {label: Discipline, value: Instrumentation & Controls}
+  - {label: Focus, value: PLC · ASRS · Commissioning}
+  - {label: Education, value: MSc Engineering Mgmt}
+  - {label: Based in, value: Leicester, UK}
+
+# Big-number tiles under the intro (HMI-style readouts). Delete to hide.
+highlights:
+  - {value: 140 → 300+, unit: pallets/h, label: Throughput after PLC program optimisation}
+  - {value: +15%, unit: uptime, label: From breakdown analysis and logic rework}
+  - {value: 5+, unit: projects, label: Large robotic warehouse automation projects}
+  - {value: Rank 4, unit: national, label: ABU Robocon 2019 — Special Jury Award}
+
+contact:
+  email: connect.tejaschaudhari@gmail.com
+  linkedin: https://www.linkedin.com/in/tejaschaudhari98
+  github: https://github.com/TejasX98
+
+about: |
+  I build and fix systems that move things reliably — conveyors, ASRS, AGVs — and the PLC logic and data that keep them honest.
+
+  At **Wipro PARI** I wrote and modified PLC control software (Siemens S7-1200/1500, TIA Portal) for large robotic warehouse projects and commissioned conveyors, ASRS and vision systems at automotive and pharmaceutical sites.
+
+  I now lead **ICQA at Cainiao's Daventry site**, using WMS data, root-cause analysis and process changes to cut inventory discrepancies.
+
+skills:
+  - group: Controls & I&C
+    items: [Siemens S7-1200/1500, TIA Portal, SCL / Ladder, IEC 61131-3, CODESYS, HMI/SCADA, VFDs, Safety interlocks, PID tuning, OPC UA, EtherNet/IP]
+  - group: Delivery
+    items: [Commissioning, FAT/SAT, DQ/IQ/OQ/PQ, FDS/URS, Technical documentation, RCA / CAPA]
+  - group: Quality & CI
+    items: [Lean, 5S, 5-Why, PFMEA, Fault tree analysis, SOPs, KPI tracking, WMS]
+  - group: Tools
+    items: [E-Plan, AutoCAD, Power BI, Excel, MS Project, C++, SQL (basic)]
+
+experience:
+  - role: ICQA Manager
+    org: Cainiao Group UK — Daventry
+    period: May 2026 – Present
+    points:
+      - Lead inventory control and quality assurance at a high-volume fulfilment centre
+      - Stock investigations, cycle counts and root cause (5-Why, PFMEA) with corrective actions
+      - Building a data-led method to trace WMS short-goods exceptions to the process step responsible
+  - role: Inventory Associate
+    org: 4PX (Cainiao Leicester fulfilment centre)
+    period: Sep 2025 – May 2026
+    points:
+      - WMS transactions and inventory audits to cut discrepancies; promoted after 8 months
+  - role: Operations Assistant
+    org: Oakland International Ltd, Leicester
+    period: Sep 2024 – May 2025
+  - role: Technical Project Consultant (Freelance)
+    org: Pune, India
+    period: Nov 2022 – Oct 2023
+    points:
+      - PLC/IoT automation for industrial clients — fertiliser dosing, Andon system, utility monitoring
+  - role: Controls Software Engineer (R&D)
+    org: Wipro PARI Ltd
+    period: Jun 2022 – Nov 2022
+    points:
+      - PLC control software for 5+ robotic warehouse automation projects (Siemens, TIA Portal, SCL, Ladder)
+      - Optimised PLC programs — throughput raised from 140 to 300+ pallets/hour
+      - Integrated PLCs with HMI, VFDs and WMS/WCS/MES over OPC UA, TCP/IP and EtherNet/IP
+  - role: Field Service Engineer — Controls & Commissioning
+    org: Wipro PARI Ltd
+    period: Nov 2021 – Jun 2022
+    points:
+      - Commissioned conveyors, ASRS, manipulators, RFID and Cognex vision at automotive and pharma sites
+      - Breakdown analysis and PLC logic rework — system uptime up 15%
+      - DQ/IQ/OQ/PQ validation on pharma automation projects
+  - role: Graduate Engineer Trainee
+    org: Wipro PARI Ltd
+    period: Nov 2020 – Nov 2021
+    points:
+      - Design specifications, FAT/SAT and PLC programming for ASRS and automated car parking
+  - role: Engineer Intern
+    org: Festo Didactic India
+    period: Jul 2020
+  - role: Intern
+    org: Hindustan Aeronautics Limited (HAL), Nashik
+    period: Jun 2018
+
+education:
+  - degree: MSc Engineering Management — Distinction
+    org: University of Leicester, UK
+    period: 2024 – 2025
+  - degree: BEng Instrumentation & Control — First Class with Distinction
+    org: Government College of Engineering and Research, Pune
+    period: 2016 – 2020
+    note: Technical In-Charge, Robotics Research Lab (35-member team), 2017 – 2020
+
+sections: [about, projects, publications, experience, education, contact]

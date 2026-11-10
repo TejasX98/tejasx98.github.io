@@ -1,0 +1,16 @@
+# local admin tool temp files
+.admin-tmp/
+__pycache__/
+*.pyc
+# editors / OS
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+# never commit secrets
+.env
+.env.*
+*.pem
+*.key

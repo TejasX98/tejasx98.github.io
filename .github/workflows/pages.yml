@@ -1,0 +1,48 @@
+# Publishes ONLY the site/ folder to GitHub Pages whenever you push to main.
+# (The admin tool and everything else in the repo is never put on the web.)
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check content files
+        run: |
+          python3 -m pip install --quiet pyyaml
+          python3 - <<'PY'
+          import yaml, sys, os
+          ok = True
+          for f in ("site.yml", "projects.yml", "publications.yml"):
+              try:
+                  yaml.safe_load(open(os.path.join("site/content", f), encoding="utf-8"))
+              except Exception as e:
+                  print(f"::error file=site/content/{f}::{e}"); ok = False
+          sys.exit(0 if ok else 1)
+          PY
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
