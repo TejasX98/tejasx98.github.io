@@ -1,13 +1,13 @@
 # Publications — edited by the admin tool. hidden: true = not shown.
 
-- title: Design and Control of Quadruped Robot with Machine Vision based Path Planning
+- title: Design and Control of Quadruped Robot along with Machine Vision based Path Planning
   authors: T. Chaudhari, et al.
   venue: IEEE Pune Section International Conference (PuneCon 2019)
   year: '2019'
   type: Conference paper
   url: https://ieeexplore.ieee.org/document/9105783
 
-- title: Path Planning and Control of Omni-Directional Robot using Cartesian Odometry and PID Algorithm
+- title: Path Planning and Controlling of Omni-Directional Robot Using Cartesian Odometry and PID Algorithm
   authors: R. Bangal, T. Chaudhari, et al.
   venue: International Conference on Computing, Power and Communication Technologies (GUCON 2019), IEEE
   year: '2019'

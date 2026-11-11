@@ -1,67 +1,83 @@
 # Site settings — edit here or in the admin tool (Profile tab).
 
 name: Tejas Chaudhari
-headline: Instrumentation & Controls Engineer
+headline: Controls & Automation Engineer
 tagline: >-
-  PLC control software, commissioning and field engineering for warehouse
-  automation, ASRS and material handling. MSc Engineering Management. Now leading
-  inventory control and quality assurance at a high-volume UK fulfilment centre.
+  Instrumentation & Control engineer with two years of Siemens PLC software,
+  commissioning and FAT/SAT on warehouse and pharma automation. MSc Engineering
+  Management. Now ICQA Supervisor at a high-volume UK fulfilment centre.
 location: Leicester, UK
 url: https://tejasx98.github.io/        # your live address (used for link previews)
 discipline: Instrumentation & Controls
-status: Open to controls & automation roles
+status: Open to controls & automation roles — UK-wide, incl. Scotland
 updated: Nov 2026
 photo: media/profile/photo.jpg
 accent: '#1f5fbf'
 
 titleblock:
   - {label: Discipline, value: Instrumentation & Controls}
-  - {label: Focus, value: PLC · ASRS · Commissioning}
+  - {label: Focus, value: Siemens PLC · Commissioning · ASRS}
   - {label: Education, value: MSc Engineering Mgmt}
-  - {label: Based in, value: Leicester, UK}
+  - {label: Based in, value: 'Leicester, UK'}
 
 # Big-number tiles under the intro (HMI-style readouts). Delete to hide.
 highlights:
-  - {value: 140 → 300+, unit: pallets/h, label: Throughput after PLC program optimisation}
-  - {value: +15%, unit: uptime, label: From breakdown analysis and logic rework}
-  - {value: 5+, unit: projects, label: Large robotic warehouse automation projects}
+  - {value: 140 → 300+, unit: pallets/h, label: Throughput after reworking PLC sequencing logic}
+  - {value: +15%, unit: uptime, label: From breakdown analysis and PLC logic rework}
+  - {value: −25%, unit: breakdown time, label: Root-cause analysis and design changes}
   - {value: Rank 4, unit: national, label: ABU Robocon 2019 — Special Jury Award}
 
+# Links shown as icons. Your email is deliberately NOT here — this file is public.
 contact:
-  email: connect.tejaschaudhari@gmail.com
   linkedin: https://www.linkedin.com/in/tejaschaudhari98
   github: https://github.com/TejasX98
 
+# Contact form (messages are emailed to you by Web3Forms; your address never appears on the site).
+# Get a free key at https://web3forms.com → enter your email → paste the key below.
+contact_form:
+  access_key: 5121d08d-4e46-4dc3-bb0e-dd24cf81b9b5
+  intro: Open to controls, automation, commissioning and I&C roles across the UK, including Scotland. Send me a message and I'll reply by email.
+
 about: |
-  I build and fix systems that move things reliably — conveyors, ASRS, AGVs — and the PLC logic and data that keep them honest.
+  I'm an Instrumentation & Control engineer with a background in warehouse and pharma automation, now working in inventory quality at a high-volume fulfilment centre.
 
-  At **Wipro PARI** I wrote and modified PLC control software (Siemens S7-1200/1500, TIA Portal) for large robotic warehouse projects and commissioned conveyors, ASRS and vision systems at automotive and pharmaceutical sites.
+  At **Wipro PARI** I spent two years on robotic warehousing, ASRS and automated car-parking projects — from graduate engineer, to on-site commissioning, to controls software. That meant writing and fixing PLC logic in Siemens TIA Portal, bringing conveyors, ASRS, lifters and vision systems online, running FAT/SAT and IQ/OQ/PQ, and training operators at handover. Reworking the sequencing logic on one pallet system took throughput from 140 to over 300 pallets an hour.
 
-  I now lead **ICQA at Cainiao's Daventry site**, using WMS data, root-cause analysis and process changes to cut inventory discrepancies.
+  After my **MSc in Engineering Management** at the University of Leicester I joined **Cainiao**, starting as an Inventory Associate in Leicester and promoted to **ICQA Supervisor** to help open the new Daventry fulfilment centre — stock investigations, audits, root-cause analysis and corrective actions, backed by data.
 
+# Tip: if a skill contains a comma, wrap it in quotes, e.g. 'HMI (KTP, Exor)'
 skills:
   - group: Controls & I&C
-    items: [Siemens S7-1200/1500, TIA Portal, SCL / Ladder, IEC 61131-3, CODESYS, HMI/SCADA, VFDs, Safety interlocks, PID tuning, OPC UA, EtherNet/IP]
+    items: [Siemens S7-1200/1500, TIA Portal, SCL / Ladder, IEC 61131-3, CODESYS, 'HMI/SCADA (KTP, Exor, Beckhoff)', VFDs / SEW drives, Safety interlocks, PID tuning, Sensor integration]
+  - group: Networks & data
+    items: [OPC UA, EtherNet/IP, Modbus/TCP, IT/OT networks, IEC 62443 awareness, IEC 61508/61511 & SIS awareness, MS SQL Server]
   - group: Delivery
-    items: [Commissioning, FAT/SAT, DQ/IQ/OQ/PQ, FDS/URS, Technical documentation, RCA / CAPA]
+    items: [Commissioning, FAT/SAT, DQ/IQ/OQ/PQ, FDS/URS, Technical documentation, Site support, RCA / CAPA]
   - group: Quality & CI
-    items: [Lean, 5S, 5-Why, PFMEA, Fault tree analysis, SOPs, KPI tracking, WMS]
+    items: [Lean, Kaizen, 5S, 5-Why, Fishbone, Fault tree analysis, PFMEA, Process mapping, Audits, SOPs, KPI tracking, WMS]
   - group: Tools
-    items: [E-Plan, AutoCAD, Power BI, Excel, MS Project, C++, SQL (basic)]
+    items: [TIA Portal, E-Plan, AutoCAD, Power BI, Excel, MS Project, C++, VB scripting, SQL (basic), Arduino IDE]
+  - group: Certifications
+    items: ['Business Acumen for Project Managers', 'Cloud Computing: Understanding Core Concepts']
+  - group: Languages
+    items: [English (professional), Hindi (fluent), Marathi (native)]
 
 experience:
-  - role: ICQA Manager
+  - role: ICQA Supervisor
     org: Cainiao Group UK — Daventry
     period: May 2026 – Present
     points:
-      - Lead inventory control and quality assurance at a high-volume fulfilment centre
-      - Stock investigations, cycle counts and root cause (5-Why, PFMEA) with corrective actions
-      - Building a data-led method to trace WMS short-goods exceptions to the process step responsible
+      - Promoted to set up and run inventory control and quality assurance at Cainiao's new Daventry fulfilment centre from its opening
+      - Stock investigations, cycle counts and discrepancy resolution using WMS and operational data
+      - Data analysis (Excel, Power BI, WMS reports) of stock accuracy and inventory health
+      - Root cause analysis (5-Why, PFMEA), corrective and preventive actions, SOP updates
+      - Lean/5S standardisation and associate training on inventory and quality procedures
   - role: Inventory Associate
-    org: 4PX (Cainiao Leicester fulfilment centre)
+    org: Cainiao (4PX) — Leicester fulfilment centre
     period: Sep 2025 – May 2026
     points:
-      - WMS transactions and inventory audits to cut discrepancies; promoted after 8 months
+      - WMS transactions and inventory audits to improve stock visibility and cut discrepancies, losses and compensation costs
+      - Quality and process reports on system-to-physical stock gaps; promoted after 8 months
   - role: Operations Assistant
     org: Oakland International Ltd, Leicester
     period: Sep 2024 – May 2025
@@ -69,40 +85,48 @@ experience:
     org: Pune, India
     period: Nov 2022 – Oct 2023
     points:
-      - PLC/IoT automation for industrial clients — fertiliser dosing, Andon system, utility monitoring
+      - Small automation projects for process and industrial clients, combining PLC/IoT control with field instrumentation
+      - Automated fertiliser dosing, an industrial Andon system for fault response, and utility consumption monitoring
   - role: Controls Software Engineer (R&D)
     org: Wipro PARI Ltd
     period: Jun 2022 – Nov 2022
     points:
-      - PLC control software for 5+ robotic warehouse automation projects (Siemens, TIA Portal, SCL, Ladder)
-      - Optimised PLC programs — throughput raised from 140 to 300+ pallets/hour
-      - Integrated PLCs with HMI, VFDs and WMS/WCS/MES over OPC UA, TCP/IP and EtherNet/IP
+      - PLC control software in Siemens TIA Portal (S7-1200/1500, SCL, Ladder, IEC 61131-3) for 5+ large robotic warehouse projects
+      - Conveyor and ASRS sequences and safety interlocks; reworked sequencing to lift throughput from 140 to 300+ pallets/hour
+      - Linked PLCs to WMS/WCS and MES over OPC UA, TCP/IP and EtherNet/IP; wrote FAT/SAT procedures and test scripts
   - role: Field Service Engineer — Controls & Commissioning
     org: Wipro PARI Ltd
     period: Nov 2021 – Jun 2022
     points:
-      - Commissioned conveyors, ASRS, manipulators, RFID and Cognex vision at automotive and pharma sites
-      - Breakdown analysis and PLC logic rework — system uptime up 15%
-      - DQ/IQ/OQ/PQ validation on pharma automation projects
+      - Commissioned conveyors, ASRS, manipulators, lifters, RFID and Cognex vision at automotive and pharma client sites
+      - Breakdown analysis (5-Whys, FTA, change analysis) and PLC logic rework — system uptime up 15%
+      - DQ/IQ/OQ/PQ validation on pharma automation projects worth up to £32M
+      - Operator training, as-built drawings, SOPs and asset registers for handover; customer appreciation (2021) for early delivery
   - role: Graduate Engineer Trainee
     org: Wipro PARI Ltd
     period: Nov 2020 – Nov 2021
     points:
-      - Design specifications, FAT/SAT and PLC programming for ASRS and automated car parking
+      - Design specifications, FAT/SAT and PLC programming for ASRS, WMS/WCS and automated car parking
+      - Root-cause analysis and design changes cut breakdown time by about 25%
   - role: Engineer Intern
     org: Festo Didactic India
     period: Jul 2020
+    points:
+      - Pneumatics, PLC (CODESYS) and robot programming, virtual commissioning in CIROS
   - role: Intern
     org: Hindustan Aeronautics Limited (HAL), Nashik
     period: Jun 2018
+    points:
+      - Aircraft instrumentation systems
 
 education:
-  - degree: MSc Engineering Management — Distinction
+  - degree: MSc Engineering Management — 1st Class with Distinction
     org: University of Leicester, UK
-    period: 2024 – 2025
-  - degree: BEng Instrumentation & Control — First Class with Distinction
-    org: Government College of Engineering and Research, Pune
+    period: Jan 2024 – Jul 2025
+    note: 'Lean, process improvement, project management and operational efficiency. Dissertation: Dynamic Energy Source Selection for the UK Smart Grid.'
+  - degree: BEng Instrumentation & Control — 1st Class with Distinction (7.83/10)
+    org: Government College of Engineering and Research, Pune (Savitribai Phule Pune University)
     period: 2016 – 2020
-    note: Technical In-Charge, Robotics Research Lab (35-member team), 2017 – 2020
+    note: Technical In-Charge, Robotics Research Lab (35-member team), 2017 – 2020. Mentor, Innovation Lab, 2018 – 2020.
 
 sections: [about, projects, publications, experience, education, contact]

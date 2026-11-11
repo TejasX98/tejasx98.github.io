@@ -71,7 +71,7 @@
       "<span>Drawn by: " + esc(initials(site.name)) + "</span>" +
       "<span>Rev: " + esc(site.updated || year) + "</span>" +
       "<span>Sheet 1 of 1</span>" +
-      (site.contact && site.contact.email ? '<a href="mailto:' + esc(site.contact.email) + '">' + esc(site.contact.email) + "</a>" : "");
+      '<a href="' + (page === "project" ? "./" : "") + '#contact">Contact</a>';
   }
 
   // section heading drawn like a P&ID line: balloon ── TITLE ───────▶
@@ -133,6 +133,7 @@
           '<div class="hero-actions">' +
             (site.cv ? '<a class="btn" href="' + href(site.cv) + '" target="_blank" rel="noopener">Download CV</a>' : "") +
             '<a class="btn btn-ghost" href="#projects">See projects</a>' +
+            (list(site.sections).includes("contact") || !list(site.sections).length ? '<a class="btn btn-ghost" href="#contact">Contact me</a>' : "") +
           "</div>" +
           '<div class="socials">' + contactLinks(site.contact) + "</div>" +
         "</div>" +
@@ -150,6 +151,7 @@
     }
     app.innerHTML = html;
     wireFilters();
+    wireContact(site);
   }
 
   function highlights(items) {
@@ -253,11 +255,72 @@
       "</section>";
   }
 
+  // Contact form — sent by Web3Forms to your inbox, so no email address appears on the site.
+  const FORM_ENDPOINT = "https://api.web3forms.com/submit";
+  const formKey = (site) => {
+    const k = String((site.contact_form || {}).access_key || "").trim();
+    return /^[0-9a-f-]{20,}$/i.test(k) ? k : "";
+  };
+
   function sectionContact(site) {
+    const cf = site.contact_form || {};
+    const key = formKey(site);
+    const intro = cf.intro || "Send me a message and I'll reply by email.";
+    const form = key
+      ? '<form class="cform" id="cform" novalidate>' +
+          '<div class="cf-row">' +
+            '<label class="cf-field"><span>Name</span><input name="name" autocomplete="name" required maxlength="100"></label>' +
+            '<label class="cf-field"><span>Email</span><input name="email" type="email" autocomplete="email" required maxlength="200"></label>' +
+          "</div>" +
+          '<label class="cf-field"><span>Subject <i>(optional)</i></span><input name="topic" maxlength="150" placeholder="e.g. Controls Engineer role at …"></label>' +
+          '<label class="cf-field"><span>Message</span><textarea name="message" rows="6" required minlength="10" maxlength="5000"></textarea></label>' +
+          // honeypot: humans never see or fill this
+          '<label class="cf-hp" aria-hidden="true">Leave empty<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>' +
+          '<div class="cf-actions"><button class="btn" type="submit">Send message</button>' +
+          '<p class="cf-status" role="status" aria-live="polite"></p></div>' +
+        "</form>"
+      : '<p class="cf-off">The contact form isn\'t switched on yet — please message me on LinkedIn.</p>';
     return '<section id="contact" class="section contact">' + head("contact", "Contact") +
-      "<p>Open to controls, automation and commissioning roles. The quickest way to reach me is email.</p>" +
-      (site.contact && site.contact.email ? '<a class="btn" href="mailto:' + esc(site.contact.email) + '">' + esc(site.contact.email) + "</a>" : "") +
-      '<div class="socials">' + contactLinks(site.contact) + "</div></section>";
+      '<div class="contact-grid"><div><p>' + esc(intro) + "</p>" +
+      '<div class="socials">' + contactLinks(site.contact) + "</div></div>" + form + "</div></section>";
+  }
+
+  function wireContact(site) {
+    const form = document.getElementById("cform");
+    if (!form) return;
+    const started = Date.now();
+    const status = form.querySelector(".cf-status");
+    const btn = form.querySelector("button[type=submit]");
+    const say = (msg, kind) => { status.textContent = msg; status.className = "cf-status" + (kind ? " " + kind : ""); };
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const f = form.elements;
+      const name = f.name.value.trim(), email = f.email.value.trim(), msg = f.message.value.trim();
+      if (!name || !email || !msg) return say("Please fill in your name, email and message.", "err");
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return say("Please check your email address.", "err");
+      if (msg.length < 10) return say("Your message looks a little short.", "err");
+      if (f.botcheck.checked || Date.now() - started < 3000) return say("Thanks — message sent.", "ok"); // quietly drop bots
+      btn.disabled = true; say("Sending…");
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            access_key: formKey(site),
+            subject: "Portfolio message: " + (f.topic.value.trim() || "from " + name),
+            from_name: "Portfolio contact form",
+            name: name, email: email, message: msg, botcheck: false
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && data.success) { form.reset(); say("Thanks, " + name.split(" ")[0] + " — your message has been sent. I'll reply by email.", "ok"); }
+        else if (res.status === 429) say("Too many messages just now — please try again in a few minutes.", "err");
+        else say("Sorry, that didn't send. Please try again, or message me on LinkedIn.", "err");
+      } catch (err) {
+        say("Couldn't connect. Check your internet connection and try again, or message me on LinkedIn.", "err");
+      }
+      btn.disabled = false;
+    });
   }
 
   /* ---------- PROJECT PAGE ---------- */

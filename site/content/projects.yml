@@ -48,7 +48,7 @@
 
     **Solution.** A master controller sends gait commands to slave controllers, one pair of legs each. Leg-length kinematics turn foot positions into actuator lengths, and an image-processing block handles path detection.
 
-    **Result.** **Special Jury Award and National Rank 4** at ABU Robocon 2019. Paper: *Design and Control of Quadruped Robot with Machine Vision based Path Planning*, IEEE PuneCon 2019.
+    **Result.** **Special Jury Award and National Rank 4** at ABU Robocon 2019. Paper: *Design and Control of Quadruped Robot along with Machine Vision based Path Planning*, IEEE PuneCon 2019.
   links:
     - {label: Paper on IEEE Xplore, url: 'https://ieeexplore.ieee.org/document/9105783'}
   media:
@@ -92,7 +92,7 @@
   tags: [PID control, Odometry, Mobile robotics, Path planning]
   cover: media/projects/omni-directional-robot/omni-run-poster.jpg
   details: |
-    Paper: *Path Planning and Control of Omni-Directional Robot using Cartesian Odometry and PID Algorithm*, presented at the 2019 International Conference on Computing, Power and Communication Technologies (GUCON 2019), technically sponsored by the IEEE Industry Applications Society.
+    Paper: *Path Planning and Controlling of Omni-Directional Robot Using Cartesian Odometry and PID Algorithm*, presented at the 2019 International Conference on Computing, Power and Communication Technologies (GUCON 2019), technically sponsored by the IEEE Industry Applications Society.
   links: []
   media:
     - {type: video, src: media/projects/omni-directional-robot/omni-run.mp4, poster: media/projects/omni-directional-robot/omni-run-poster.jpg, caption: Robot following its planned path}
@@ -131,6 +131,7 @@
 
     - Set up daily and weekly review meetings — team productivity up about 20%
     - Introduced holonomic drives, closed-loop control, 3D printing and quadruped robotics to the lab
+    - Also mentored students in the college Innovation Lab (2018 – 2020)
     - **2018:** Smart and Simple Robot Award, National Rank 7
     - **2019:** Special Jury Award, National Rank 4 — see [Quadruped Robot](project.html?id=quadruped-robot)
   links: []
@@ -153,7 +154,7 @@
   category: University
   date: '2025'
   summary: MSc dissertation — a hybrid multi-criteria decision-making framework for choosing energy sources on the UK grid.
-  role: Sole author. MSc Engineering Management, University of Leicester (Distinction).
+  role: Sole author. MSc Engineering Management, University of Leicester — 1st Class with Distinction.
   tags: [MCDM, Energy systems, Decision analysis, Smart grid]
   cover: media/projects/msc-dissertation/cover.svg
   details: |
@@ -198,15 +199,18 @@
     - {type: image, src: media/projects/festo-internship/cover.jpg, caption: Virtual production line in CIROS}
 
 - id: freelance-automation
-  title: Freelance Automation Projects
+  title: Freelance Automation Projects — Dosing, Andon & Utilities
   category: Work
   date: 2022 – 2023
-  summary: Small PLC/IoT automation jobs for industrial clients — fertiliser dosing, an Andon system and utility consumption monitoring.
-  role: Technical project consultant.
-  tags: [PLC, IoT, Instrumentation, Andon]
-  hidden: true
+  summary: Small PLC/IoT automation jobs for process and industrial clients — fertiliser dosing, an industrial Andon system and utility consumption monitoring.
+  role: Technical project consultant (freelance), Pune.
+  tags: [PLC, IoT, Field instrumentation, Andon, Control logic]
+  cover: media/projects/freelance-automation/cover.svg
   details: |
-    Draft — add a photo or diagram for each job and what changed for the client.
+    - **Fertiliser dosing automation** — designed an automated dosing system that improved nutrient delivery accuracy
+    - **Industrial Andon system** — faster response to bottlenecks and faults on the line
+    - **Utility consumption automation** — monitoring and control to use resources more efficiently
+    - Client support on control-logic changes, hardware/software troubleshooting and performance tuning
   links: []
   media: []
 
@@ -251,3 +255,15 @@
     - {type: image, src: media/projects/workshops-events/dipex.jpg, caption: DIPEX}
     - {type: image, src: media/projects/workshops-events/ndmvp-group.jpg, caption: Workshop group}
     - {type: image, src: media/projects/workshops-events/seminar.jpg, caption: Seminar}
+
+- id: space-capsule-lander
+  title: Space Capsule Lander — System Design
+  category: University
+  date: '2025'
+  summary: Draft — MSc group project on the system design of a space capsule lander.
+  tags: [Systems engineering, Project management]
+  hidden: true
+  details: |
+    Draft — add your part of the project, the method and the outcome.
+  links: []
+  media: []
