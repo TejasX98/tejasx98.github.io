@@ -1,4 +1,4 @@
-# Site settings — edit here or in the admin tool (Profile tab).
+# Site settings - edit here or in the admin tool (Profile tab).
 
 name: Tejas Chaudhari
 headline: Controls & Automation Engineer
@@ -9,7 +9,7 @@ tagline: >-
 location: Leicester, UK
 url: https://tejasx98.github.io/        # your live address (used for link previews)
 discipline: Instrumentation & Controls
-status: Open to controls & automation roles — UK-wide, incl. Scotland
+status: Open to controls & automation roles - UK-wide, incl. Scotland
 updated: Nov 2026
 photo: media/profile/photo.jpg
 accent: '#1f5fbf'
@@ -25,9 +25,9 @@ highlights:
   - {value: 140 → 300+, unit: pallets/h, label: Throughput after reworking PLC sequencing logic}
   - {value: +15%, unit: uptime, label: From breakdown analysis and PLC logic rework}
   - {value: −25%, unit: breakdown time, label: Root-cause analysis and design changes}
-  - {value: Rank 4, unit: national, label: ABU Robocon 2019 — Special Jury Award}
+  - {value: Rank 4, unit: national, label: ABU Robocon 2019 - Special Jury Award}
 
-# Links shown as icons. Your email is deliberately NOT here — this file is public.
+# Links shown as icons. Your email is deliberately NOT here - this file is public.
 contact:
   linkedin: https://www.linkedin.com/in/tejaschaudhari98
   github: https://github.com/TejasX98
@@ -41,7 +41,7 @@ contact_form:
 about: |
   I'm an Instrumentation & Control engineer with a background in warehouse and pharma automation, now working in inventory quality at a high-volume fulfilment centre.
 
-  At **Wipro PARI** I spent two years on robotic warehousing, ASRS and automated car-parking projects — from graduate engineer, to on-site commissioning, to controls software. That meant writing and fixing PLC logic in Siemens TIA Portal, bringing conveyors, ASRS, lifters and vision systems online, running FAT/SAT and IQ/OQ/PQ, and training operators at handover. Reworking the sequencing logic on one pallet system took throughput from 140 to over 300 pallets an hour.
+  At **Wipro PARI** I spent two years on robotic warehousing, ASRS and automated car-parking projects - from graduate engineer, to on-site commissioning, to controls software. That meant writing and fixing PLC logic in Siemens TIA Portal, bringing conveyors, ASRS, lifters and vision systems online, running FAT/SAT and IQ/OQ/PQ, and training operators at handover. Reworking the sequencing logic on one pallet system took throughput from 140 to over 300 pallets an hour.
 
   After my **MSc in Engineering Management** at the University of Leicester I joined **Cainiao**, starting as an Inventory Associate in Leicester and promoted to **ICQA Supervisor** to help open the new Daventry fulfilment centre — stock investigations, audits, root-cause analysis and corrective actions, backed by data.
 
@@ -64,7 +64,7 @@ skills:
 
 experience:
   - role: ICQA Supervisor
-    org: Cainiao Group UK — Daventry
+    org: Cainiao Group UK - Daventry
     period: May 2026 – Present
     points:
       - Promoted to set up and run inventory control and quality assurance at Cainiao's new Daventry fulfilment centre from its opening
@@ -73,7 +73,7 @@ experience:
       - Root cause analysis (5-Why, PFMEA), corrective and preventive actions, SOP updates
       - Lean/5S standardisation and associate training on inventory and quality procedures
   - role: Inventory Associate
-    org: Cainiao (4PX) — Leicester fulfilment centre
+    org: Cainiao (4PX) - Leicester fulfilment centre
     period: Sep 2025 – May 2026
     points:
       - WMS transactions and inventory audits to improve stock visibility and cut discrepancies, losses and compensation costs
@@ -94,12 +94,12 @@ experience:
       - PLC control software in Siemens TIA Portal (S7-1200/1500, SCL, Ladder, IEC 61131-3) for 5+ large robotic warehouse projects
       - Conveyor and ASRS sequences and safety interlocks; reworked sequencing to lift throughput from 140 to 300+ pallets/hour
       - Linked PLCs to WMS/WCS and MES over OPC UA, TCP/IP and EtherNet/IP; wrote FAT/SAT procedures and test scripts
-  - role: Field Service Engineer — Controls & Commissioning
+  - role: Field Service Engineer - Controls & Commissioning
     org: Wipro PARI Ltd
     period: Nov 2021 – Jun 2022
     points:
       - Commissioned conveyors, ASRS, manipulators, lifters, RFID and Cognex vision at automotive and pharma client sites
-      - Breakdown analysis (5-Whys, FTA, change analysis) and PLC logic rework — system uptime up 15%
+      - Breakdown analysis (5-Whys, FTA, change analysis) and PLC logic rework - system uptime up 15%
       - DQ/IQ/OQ/PQ validation on pharma automation projects worth up to £32M
       - Operator training, as-built drawings, SOPs and asset registers for handover; customer appreciation (2021) for early delivery
   - role: Graduate Engineer Trainee
@@ -120,11 +120,11 @@ experience:
       - Aircraft instrumentation systems
 
 education:
-  - degree: MSc Engineering Management — 1st Class with Distinction
+  - degree: MSc Engineering Management - 1st Class with Distinction
     org: University of Leicester, UK
     period: Jan 2024 – Jul 2025
     note: 'Lean, process improvement, project management and operational efficiency. Dissertation: Dynamic Energy Source Selection for the UK Smart Grid.'
-  - degree: BEng Instrumentation & Control — 1st Class with Distinction (7.83/10)
+  - degree: BEng Instrumentation & Control - 1st Class with Distinction (7.83/10)
     org: Government College of Engineering and Research, Pune (Savitribai Phule Pune University)
     period: 2016 – 2020
     note: Technical In-Charge, Robotics Research Lab (35-member team), 2017 – 2020. Mentor, Innovation Lab, 2018 – 2020.

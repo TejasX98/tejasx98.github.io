@@ -2,12 +2,18 @@
 # Order on the page = order here. hidden: true = draft (not shown on the live site).
 
 - id: warehouse-automation
-  title: Robotic Warehouse Automation — PLC Control Software
+  title: Robotic Warehouse Automation - PLC Control Software
   category: Work
   date: 2020 – 2022
   summary: PLC control software and on-site commissioning for ASRS, conveyors and AGVs across 5+ large warehouse automation projects at Wipro PARI.
   role: Graduate trainee → field service engineer → controls software engineer (R&D).
-  tags: [Siemens S7-1200/1500, TIA Portal, SCL, Ladder, Commissioning, OPC UA]
+  tags:
+  - Siemens S7-1200/1500
+  - TIA Portal
+  - SCL
+  - Ladder
+  - Commissioning
+  - OPC UA
   featured: true
   cover: media/projects/warehouse-automation/cover.svg
   details: |
@@ -27,15 +33,19 @@
     *Client names and site photos are left out for confidentiality.*
   links: []
   media: []
-
 - id: quadruped-robot
   title: Quadruped Robot with Machine-Vision Path Planning
   category: Competition
   date: '2019'
   summary: Four-legged robot with coordinated gait control and vision-based path planning. ABU Robocon 2019 Special Jury Award, National Rank 4. Published at IEEE PuneCon 2019.
-  role: Technical In-Charge of the lab team — control logic for leg coordination, actuator integration, slope/step testing.
+  role: Technical In-Charge of the lab team - control logic for leg coordination, actuator integration, slope/step testing.
   team: GCOER Robotics Research Lab
-  tags: [Embedded control, Kinematics, Machine vision, C++, Arduino]
+  tags:
+  - Embedded control
+  - Kinematics
+  - Machine vision
+  - C++
+  - Arduino
   featured: true
   cover: media/projects/quadruped-robot/cover.jpg
   details: |
@@ -50,73 +60,122 @@
 
     **Result.** **Special Jury Award and National Rank 4** at ABU Robocon 2019. Paper: *Design and Control of Quadruped Robot along with Machine Vision based Path Planning*, IEEE PuneCon 2019.
   links:
-    - {label: Paper on IEEE Xplore, url: 'https://ieeexplore.ieee.org/document/9105783'}
+  - label: Paper on IEEE Xplore
+    url: https://ieeexplore.ieee.org/document/9105783
   media:
-    - {type: video, src: media/projects/quadruped-robot/mr2-run.mp4, poster: media/projects/quadruped-robot/mr2-run-poster.jpg, caption: Robot run}
-    - {type: image, src: media/projects/quadruped-robot/arena.jpg, caption: In the arena}
-    - {type: image, src: media/projects/quadruped-robot/slope-test.jpg, caption: Slope test}
-    - {type: image, src: media/projects/quadruped-robot/step-test.jpg, caption: Step test}
-    - {type: image, src: media/projects/quadruped-robot/cad-model.jpg, caption: CAD model}
-    - {type: image, src: media/projects/quadruped-robot/leg-kinematics.jpg, caption: Leg-length kinematics}
-    - {type: image, src: media/projects/quadruped-robot/controller-network.png, caption: Controller network}
-    - {type: image, src: media/projects/quadruped-robot/motor-block.png, caption: Motor / actuator block}
-    - {type: image, src: media/projects/quadruped-robot/image-processing.png, caption: Image-processing block}
-    - {type: image, src: media/projects/quadruped-robot/control-board.jpg, caption: Control board}
-    - {type: image, src: media/projects/quadruped-robot/design-whiteboard.jpg, caption: Mechanism design}
-    - {type: image, src: media/projects/quadruped-robot/team.jpg, caption: Team}
-
+  - type: video
+    src: media/projects/quadruped-robot/mr2-run.mp4
+    poster: media/projects/quadruped-robot/mr2-run-poster.jpg
+    caption: Robot run
+  - type: image
+    src: media/projects/quadruped-robot/arena.jpg
+    caption: In the arena
+  - type: image
+    src: media/projects/quadruped-robot/slope-test.jpg
+    caption: Slope test
+  - type: image
+    src: media/projects/quadruped-robot/step-test.jpg
+    caption: Step test
+  - type: image
+    src: media/projects/quadruped-robot/cad-model.jpg
+    caption: CAD model
+  - type: image
+    src: media/projects/quadruped-robot/leg-kinematics.jpg
+    caption: Leg-length kinematics
+  - type: image
+    src: media/projects/quadruped-robot/controller-network.png
+    caption: Controller network
+  - type: image
+    src: media/projects/quadruped-robot/motor-block.png
+    caption: Motor / actuator block
+  - type: image
+    src: media/projects/quadruped-robot/image-processing.png
+    caption: Image-processing block
+  - type: image
+    src: media/projects/quadruped-robot/control-board.jpg
+    caption: Control board
+  - type: image
+    src: media/projects/quadruped-robot/design-whiteboard.jpg
+    caption: Mechanism design
+  - type: image
+    src: media/projects/quadruped-robot/team.jpg
+    caption: Team
 - id: holonomic-agv
-  title: Holonomic Material-Handling AGV — with Mahindra & Mahindra
+  title: Holonomic Material-Handling AGV - with Mahindra & Mahindra
   category: Industry project
   date: '2019'
   summary: Omni-directional material-handling vehicle with a lifting mechanism, built in the college lab with Mahindra & Mahindra.
-  role: Team project — control electronics and testing.
+  role: Team project - control electronics and testing.
   team: GCOER Robotics Research Lab
-  tags: [Holonomic drive, Arduino Mega, Motor drivers, Encoders, IMU]
+  tags:
+  - Holonomic drive
+  - Arduino Mega
+  - Motor drivers
+  - Encoders
+  - IMU
   featured: true
   cover: media/projects/holonomic-agv/cover.jpg
-  details: |
-    An Arduino Mega 2560 drives Sabertooth 2×12 motor drivers for the drive motors and linear actuators. Wheel encoders and an inertial measurement unit (IMU) give position feedback, and a buck converter supplies the logic rail.
+  details: An Arduino Mega 2560 drives Sabertooth 2×12 motor drivers for the drive motors and linear actuators. Wheel encoders and an inertial measurement unit (IMU) give position feedback, and a buck converter supplies the logic rail.
   links: []
   media:
-    - {type: video, src: media/projects/holonomic-agv/arm-run.mp4, poster: media/projects/holonomic-agv/arm-run-poster.jpg, caption: AGV in operation}
-    - {type: image, src: media/projects/holonomic-agv/schematic.jpg, caption: Control schematic}
-
+  - type: video
+    src: media/projects/holonomic-agv/arm-run.mp4
+    poster: media/projects/holonomic-agv/arm-run-poster.jpg
+    caption: AGV in operation
+  - type: image
+    src: media/projects/holonomic-agv/schematic.jpg
+    caption: Control schematic
 - id: omni-directional-robot
-  title: Omni-Directional Robot — Path Planning & PID Control
+  title: Omni-Directional Robot - Path Planning & PID Control
   category: Research
   date: '2019'
   summary: Path planning and position control of an omni-directional mobile robot using Cartesian odometry and PID. Presented at IEEE GUCON 2019.
-  role: Co-author — team project.
+  role: Co-author - team project.
   team: R. Bangal, T. Chaudhari and team
-  tags: [PID control, Odometry, Mobile robotics, Path planning]
+  tags:
+  - PID control
+  - Odometry
+  - Mobile robotics
+  - Path planning
   cover: media/projects/omni-directional-robot/omni-run-poster.jpg
-  details: |
-    Paper: *Path Planning and Controlling of Omni-Directional Robot Using Cartesian Odometry and PID Algorithm*, presented at the 2019 International Conference on Computing, Power and Communication Technologies (GUCON 2019), technically sponsored by the IEEE Industry Applications Society.
+  details: 'Paper: *Path Planning and Controlling of Omni-Directional Robot Using Cartesian Odometry and PID Algorithm*, presented at the 2019 International Conference on Computing, Power and Communication Technologies (GUCON 2019), technically sponsored by the IEEE Industry Applications Society.'
   links: []
   media:
-    - {type: video, src: media/projects/omni-directional-robot/omni-run.mp4, poster: media/projects/omni-directional-robot/omni-run-poster.jpg, caption: Robot following its planned path}
-
+  - type: video
+    src: media/projects/omni-directional-robot/omni-run.mp4
+    poster: media/projects/omni-directional-robot/omni-run-poster.jpg
+    caption: Robot following its planned path
 - id: mitsubishi-electric-cup
-  title: Mitsubishi Electric Cup 2019 — Automation Competition
+  title: Mitsubishi Electric Cup 2019 - Automation Competition
   category: Competition
   date: Feb 2019
   summary: National-level automation competition. Our team ABHEDYA received a Certificate of Appreciation for commendable performance.
-  role: Team member — PLC/HMI automation build.
+  role: Team member - PLC/HMI automation build.
   team: Team ABHEDYA
-  tags: [Mitsubishi PLC, HMI, Industrial automation, Panel wiring]
+  tags:
+  - Mitsubishi PLC
+  - HMI
+  - Industrial automation
+  - Panel wiring
   cover: media/projects/mitsubishi-electric-cup/cover.jpg
   details: |
-    4th Mitsubishi Electric Cup, held 15–16 February 2019 — a national-level automation competition run by Mitsubishi Electric India.
+    4th Mitsubishi Electric Cup, held 15–16 February 2019 - a national-level automation competition run by Mitsubishi Electric India.
 
     Our team built and programmed an automation panel with a PLC and HMI, and was recognised for **commendable performance**.
   links: []
   media:
-    - {type: image, src: media/projects/mitsubishi-electric-cup/cover.jpg, caption: Control panel}
-    - {type: image, src: media/projects/mitsubishi-electric-cup/hmi-screen.jpg, caption: HMI screen}
-    - {type: image, src: media/projects/mitsubishi-electric-cup/award.jpg, caption: Receiving the award}
-    - {type: image, src: media/projects/mitsubishi-electric-cup/certificate.jpg, caption: Certificate of Appreciation}
-
+  - type: image
+    src: media/projects/mitsubishi-electric-cup/cover.jpg
+    caption: Control panel
+  - type: image
+    src: media/projects/mitsubishi-electric-cup/hmi-screen.jpg
+    caption: HMI screen
+  - type: image
+    src: media/projects/mitsubishi-electric-cup/award.jpg
+    caption: Receiving the award
+  - type: image
+    src: media/projects/mitsubishi-electric-cup/certificate.jpg
+    caption: Certificate of Appreciation
 - id: robocon
   title: Robotics Research Lab & DD Robocon
   category: Competition
@@ -124,38 +183,73 @@
   summary: Technical In-Charge of a 35-member student robotics team across four Robocon seasons. Smart and Simple Robot Award 2018 (National Rank 7); Special Jury Award 2019 (National Rank 4).
   role: Technical In-Charge, Robotics Research Lab (Sep 2017 – Sep 2020).
   team: GCOER Robotics Research Lab
-  tags: [Robotics, Mechatronics, Team leadership, Closed-loop control, 3D printing]
+  tags:
+  - Robotics
+  - Mechatronics
+  - Team leadership
+  - Closed-loop control
+  - 3D printing
   cover: media/projects/robocon/cover.jpg
   details: |
     Led the college's 35-member robotics team for the ABU Asia-Pacific Robot Contest (DD Robocon in India).
 
-    - Set up daily and weekly review meetings — team productivity up about 20%
+    - Set up daily and weekly review meetings - team productivity up about 20%
     - Introduced holonomic drives, closed-loop control, 3D printing and quadruped robotics to the lab
     - Also mentored students in the college Innovation Lab (2018 – 2020)
     - **2018:** Smart and Simple Robot Award, National Rank 7
-    - **2019:** Special Jury Award, National Rank 4 — see [Quadruped Robot](project.html?id=quadruped-robot)
+    - **2019:** Special Jury Award, National Rank 4 - see [Quadruped Robot](project.html?id=quadruped-robot)
   links: []
   media:
-    - {type: video, src: media/projects/robocon/2017-mechanism.mp4, poster: media/projects/robocon/2017-mechanism-poster.jpg, caption: 2017 — mechanism test}
-    - {type: video, src: media/projects/robocon/2017-play.mp4, poster: media/projects/robocon/2017-play-poster.jpg, caption: 2017 — game play}
-    - {type: image, src: media/projects/robocon/2017-team.jpg, caption: 2017 team}
-    - {type: video, src: media/projects/robocon/2018-run.mp4, poster: media/projects/robocon/2018-run-poster.jpg, caption: 2018 — robot run}
-    - {type: image, src: media/projects/robocon/2018-robots.jpg, caption: 2018 robots}
-    - {type: image, src: media/projects/robocon/2018-robot.jpg, caption: 2018 robot}
-    - {type: image, src: media/projects/robocon/2018-robots-2.jpg, caption: 2018 robots}
-    - {type: image, src: media/projects/robocon/2018-team.jpg, caption: 2018 team}
-    - {type: image, src: media/projects/robocon/2020-robots.jpg, caption: 2020 robots}
-    - {type: image, src: media/projects/robocon/2020-robot-1.jpg, caption: 2020 robot}
-    - {type: image, src: media/projects/robocon/2020-robot-2.jpg, caption: 2020 robot}
-    - {type: image, src: media/projects/robocon/2017-certificate.jpg, caption: Robocon 2017 participation certificate}
-
+  - type: video
+    src: media/projects/robocon/2017-mechanism.mp4
+    poster: media/projects/robocon/2017-mechanism-poster.jpg
+    caption: 2017 - mechanism test
+  - type: video
+    src: media/projects/robocon/2017-play.mp4
+    poster: media/projects/robocon/2017-play-poster.jpg
+    caption: 2017 - game play
+  - type: image
+    src: media/projects/robocon/2017-team.jpg
+    caption: 2017 team
+  - type: video
+    src: media/projects/robocon/2018-run.mp4
+    poster: media/projects/robocon/2018-run-poster.jpg
+    caption: 2018 - robot run
+  - type: image
+    src: media/projects/robocon/2018-robots.jpg
+    caption: 2018 robots
+  - type: image
+    src: media/projects/robocon/2018-robot.jpg
+    caption: 2018 robot
+  - type: image
+    src: media/projects/robocon/2018-robots-2.jpg
+    caption: 2018 robots
+  - type: image
+    src: media/projects/robocon/2018-team.jpg
+    caption: 2018 team
+  - type: image
+    src: media/projects/robocon/2020-robots.jpg
+    caption: 2020 robots
+  - type: image
+    src: media/projects/robocon/2020-robot-1.jpg
+    caption: 2020 robot
+  - type: image
+    src: media/projects/robocon/2020-robot-2.jpg
+    caption: 2020 robot
+  - type: image
+    src: media/projects/robocon/2017-certificate.jpg
+    caption: Robocon 2017 participation certificate
 - id: msc-dissertation
   title: Dynamic Energy Source Selection for the UK Smart Grid
   category: University
   date: '2025'
-  summary: MSc dissertation — a hybrid multi-criteria decision-making framework for choosing energy sources on the UK grid.
+  summary: MSc dissertation - a hybrid multi-criteria decision-making framework for choosing energy sources on the UK grid.
   role: Sole author. MSc Engineering Management, University of Leicester — 1st Class with Distinction.
-  tags: [MCDM, Energy systems, Decision analysis, Smart grid]
+  tags:
+  - MCDM
+  - Energy systems
+  - Decision analysis
+  - Smart grid
   cover: media/projects/msc-dissertation/cover.svg
   details: |
     *Dynamic Energy Source Selection for the UK Smart Grid: a Hybrid Multi-Criteria Decision-Making Framework.*
@@ -163,15 +257,19 @@
     Add 3–5 lines here: the question, the method, and the main finding.
   links: []
   media: []
-
 - id: smart-grid
-  title: Smart Grid — Dynamic Load Monitoring (BEng Final Project)
+  title: Smart Grid - Dynamic Load Monitoring (B.Eng Final Project)
   category: College
   date: '2020'
   summary: Scaled smart-grid model with wireless sensor nodes for dynamic load monitoring, plus PLC control and SCADA.
   role: Team project.
   team: BEng project team
-  tags: [Wireless sensor network, ESP32, PLC, SCADA, IoT]
+  tags:
+  - Wireless sensor network
+  - ESP32
+  - PLC
+  - SCADA
+  - IoT
   cover: media/projects/smart-grid/cover.jpg
   details: |
     - Designed and modelled a scaled version of the smart-grid concept
@@ -179,91 +277,127 @@
     - PLC control logic and SCADA screens for the grid model
     - Remote monitoring through a mobile app and a simple web page, with data logging
   links:
-    - {label: Project report (PDF), url: media/projects/smart-grid/report.pdf}
+  - label: Project report (PDF)
+    url: media/projects/smart-grid/report.pdf
   media:
-    - {type: image, src: media/projects/smart-grid/cover.jpg, caption: Smart-grid concept}
-    - {type: image, src: media/projects/smart-grid/architecture.jpg, caption: System architecture}
-    - {type: image, src: media/projects/smart-grid/control-scheme.jpg, caption: Control scheme}
-    - {type: pdf, src: media/projects/smart-grid/report.pdf, caption: Project report}
-
+  - type: image
+    src: media/projects/smart-grid/cover.jpg
+    caption: Smart-grid concept
+  - type: image
+    src: media/projects/smart-grid/architecture.jpg
+    caption: System architecture
+  - type: image
+    src: media/projects/smart-grid/control-scheme.jpg
+    caption: Control scheme
+  - type: pdf
+    src: media/projects/smart-grid/report.pdf
+    caption: Project report
 - id: festo-internship
-  title: Festo Didactic Internship — Virtual Commissioning
+  title: Festo Didactic Internship - Virtual Commissioning
   category: Training
   date: Jul 2020
   summary: Pneumatic and electro-pneumatic systems, PLC programming in CODESYS, and robot programming with virtual commissioning in CIROS.
   role: Engineer intern.
-  tags: [CODESYS, CIROS, Pneumatics, Virtual commissioning]
+  tags:
+  - CODESYS
+  - CIROS
+  - Pneumatics
+  - Virtual commissioning
   cover: media/projects/festo-internship/cover.jpg
   links: []
   media:
-    - {type: image, src: media/projects/festo-internship/cover.jpg, caption: Virtual production line in CIROS}
-
+  - type: image
+    src: media/projects/festo-internship/cover.jpg
+    caption: Virtual production line in CIROS
 - id: freelance-automation
-  title: Freelance Automation Projects — Dosing, Andon & Utilities
+  title: Freelance Automation Projects - Dosing, Andon & Utilities
   category: Work
   date: 2022 – 2023
-  summary: Small PLC/IoT automation jobs for process and industrial clients — fertiliser dosing, an industrial Andon system and utility consumption monitoring.
+  summary: Small PLC/IoT automation jobs for process and industrial clients - fertiliser dosing, an industrial Andon system and utility consumption monitoring.
   role: Technical project consultant (freelance), Pune.
-  tags: [PLC, IoT, Field instrumentation, Andon, Control logic]
+  tags:
+  - PLC
+  - IoT
+  - Field instrumentation
+  - Andon
+  - Control logic
   cover: media/projects/freelance-automation/cover.svg
   details: |
-    - **Fertiliser dosing automation** — designed an automated dosing system that improved nutrient delivery accuracy
-    - **Industrial Andon system** — faster response to bottlenecks and faults on the line
-    - **Utility consumption automation** — monitoring and control to use resources more efficiently
+    - **Fertiliser dosing automation** - designed an automated dosing system that improved nutrient delivery accuracy
+    - **Industrial Andon system** - faster response to bottlenecks and faults on the line
+    - **Utility consumption automation** - monitoring and control to use resources more efficiently
     - Client support on control-logic changes, hardware/software troubleshooting and performance tuning
   links: []
   media: []
-
 - id: inventory-heatmap
   title: Inventory Movement Heat Map
   category: Personal
   date: '2026'
   summary: Ranks fastest and slowest moving SKUs and draws a pick-location heat map from warehouse movement data.
-  role: Built the whole thing — data cleaning, analysis and visuals.
-  tags: [Python, Data analysis, Warehousing, ICQA]
+  role: Built the whole thing - data cleaning, analysis and visuals.
+  tags:
+  - Python
+  - Data analysis
+  - Warehousing
+  - ICQA
   hidden: true
-  details: |
-    Draft — publish once the tool and its GitHub repo exist. Use anonymised sample data only.
+  details: Draft - publish once the tool and its GitHub repo exist. Use anonymised sample data only.
   links: []
   media: []
-
 - id: traffic-junction-model
   title: Traffic Junction Model
   category: College
   date: 20XX
-  summary: Draft — scaled traffic junction with servo-operated barriers and IR sensors.
-  tags: [Sensors, Servo control]
+  summary: Draft - scaled traffic junction with servo-operated barriers and IR sensors.
+  tags:
+  - Sensors
+  - Servo control
   hidden: true
   cover: media/projects/traffic-junction-model/cover.jpg
   links: []
   media:
-    - {type: image, src: media/projects/traffic-junction-model/cover.jpg, caption: Junction layout}
-    - {type: image, src: media/projects/traffic-junction-model/model.png, caption: Model}
-
+  - type: image
+    src: media/projects/traffic-junction-model/cover.jpg
+    caption: Junction layout
+  - type: image
+    src: media/projects/traffic-junction-model/model.png
+    caption: Model
 - id: workshops-events
-  title: Workshops & Events — Robotics Research Lab
+  title: Workshops & Events - Robotics Research Lab
   category: Events
   date: 2018 – 2020
-  summary: Draft — sessions run in the college Robotics Research Lab, project exhibitions and seminars.
-  tags: [Workshops, Outreach]
+  summary: Draft - sessions run in the college Robotics Research Lab, project exhibitions and seminars.
+  tags:
+  - Workshops
+  - Outreach
   hidden: true
   cover: media/projects/workshops-events/cover.jpg
   links: []
   media:
-    - {type: image, src: media/projects/workshops-events/cover.jpg, caption: Robotics Research Lab}
-    - {type: image, src: media/projects/workshops-events/session.jpg, caption: Session}
-    - {type: image, src: media/projects/workshops-events/dipex.jpg, caption: DIPEX}
-    - {type: image, src: media/projects/workshops-events/ndmvp-group.jpg, caption: Workshop group}
-    - {type: image, src: media/projects/workshops-events/seminar.jpg, caption: Seminar}
-
+  - type: image
+    src: media/projects/workshops-events/cover.jpg
+    caption: Robotics Research Lab
+  - type: image
+    src: media/projects/workshops-events/session.jpg
+    caption: Session
+  - type: image
+    src: media/projects/workshops-events/dipex.jpg
+    caption: DIPEX
+  - type: image
+    src: media/projects/workshops-events/ndmvp-group.jpg
+    caption: Workshop group
+  - type: image
+    src: media/projects/workshops-events/seminar.jpg
+    caption: Seminar
 - id: space-capsule-lander
-  title: Space Capsule Lander — System Design
+  title: Space Capsule Lander - System Design
   category: University
   date: '2025'
-  summary: Draft — MSc group project on the system design of a space capsule lander.
-  tags: [Systems engineering, Project management]
+  summary: Draft - MSc group project on the system design of a space capsule lander.
+  tags:
+  - Systems engineering
+  - Project management
   hidden: true
-  details: |
-    Draft — add your part of the project, the method and the outcome.
+  details: Draft - add your part of the project, the method and the outcome.
   links: []
   media: []
